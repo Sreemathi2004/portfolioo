@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.5s, color 0.5s;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/942/507/778/baby-pink-background-wallpaper-preview.jpg);
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    padding: 20px 0;
+}
+
+nav {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--header-text-color);
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--link-hover-color);
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+button#toggle-mode {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--header-text-color);
+}
+
+/* Dark Mode */
+body.dark-mode {
+    --bg-color: #4b91ec;
+    --text-color: #060f38;
+    --header-bg-color: #2fb3c4;
+    --header-text-color: #6c63e45e;
+    --link-hover-color: #3362e4;
+    --border-color: #d854c256;
+}
+
+/* Light Mode */
+body.light-mode {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --header-bg-color: #6de4a8;
+    --header-text-color: #fff;
+    --link-hover-color: #e7bfe13f;
+    --border-color: #ccc;
+}
